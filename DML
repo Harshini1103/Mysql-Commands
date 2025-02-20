@@ -1,0 +1,12 @@
+create schema DML;
+use DML;
+create table products(name varchar(100),price int,quality varchar(100),quantity int);
+select * from products;
+insert into products values("Milky Bar",10,"Good",1);
+insert into products values("Dairy Milk",120,"Good",6);
+insert into products values("IncenseStick",150,"Good",3);
+insert into products values("Milk Bikis",30,"Good",3);
+update products SET name="choco" WHERE name="IncenseStick";
+delete from products where price=10;
+SET SQL_SAFE_UPDATES = 0;
+
