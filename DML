@@ -1,3 +1,5 @@
+//DML Commanda(INSERT,UPDATE,DELETE)
+
 create schema DML;
 use DML;
 create table products(name varchar(100),price int,quality varchar(100),quantity int);
