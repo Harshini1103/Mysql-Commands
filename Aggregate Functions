@@ -1,0 +1,19 @@
+create schema Aggregate;
+use Aggregate;
+create table datas(stu_name varchar(100),stu_mark int,depart varchar(100));
+insert into datas values("Bala",20,"BCA");
+insert into datas values("Kala",50,"BCom");
+insert into datas values("Mala",30,"BCom");
+insert into datas values("Sheela",30,"BCA");
+insert into datas values("Leela",10,"BSc");
+select * from datas;
+select stu_mark from datas;
+-- select sum(stu_mark) from datas;//SUM
+-- select sum(stu_mark) as total from datas;//To change column name
+-- select max(stu_mark) from datas;//MAXIMUM
+-- select min(stu_mark) from datas;//MINIMUM
+-- select avg(stu_mark) from datas;//AVERAGE
+-- select count(stu_mark) from datas;//COUNT
+
+-- select count(stu_name) from datas where depart ="BCA";
+
