@@ -3,6 +3,7 @@
 create schema DDL;
 use DDL;
 create table students(name varchar(100),age int,department varchar(100),location varchar(100));
+desc students;
 alter table students add column phoneno int;
 alter table students change department dept varchar(100);
 alter table students change location location int;
