@@ -1,0 +1,15 @@
+create schema DQL;
+use DQL;
+create table customer(name varchar(100),age int,dept varchar(100),location varchar(100));
+insert into customer values("harshini",21,"BCA","Chennai");
+insert into customer values("Sanjana",22,"MCOM","Kerala");
+insert into customer values("indu",22,"Bsc","Coimbatore");
+insert into customer values("kalpana",23,"BCOM","Mumbai");
+select * from customer;
+select name,age from customer;
+select name,age,location from customer where name="harshini";
+select * from customer where name in('harshini');
+select * from customer where name not in('harshini');
+select * from customer order by age asc;
+select * from customer order by  age desc;
+
